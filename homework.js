@@ -92,8 +92,20 @@ strivify("School")
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
 HINT: Module Operator
 */
+heading("Function check3and7")
 
-/* WRITE YOUR CODE HERE */
+function check3and7(positiveNumber) {
+     let intPositifNum = parseInt(positiveNumber)
+
+     if (intPositifNum % 3 === 0 || intPositifNum % 7 === 0){
+         console.log("Correct! it is multiple of 3 or 7")
+     }
+     else {
+         console.log("Incorrect! Not a multiple of 3 or 7")
+     }
+}
+check3and7(7)
+
 
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).

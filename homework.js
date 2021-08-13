@@ -62,7 +62,7 @@ function boundary(n) {
     let ifTrue = intN >= 20 && intN <= 100 || n === 400? true : false;
     console.log(ifTrue)
 }
-(boundary(20))
+(boundary(600))
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
@@ -135,17 +135,30 @@ Write a function "cutString" to create a new string without the first and last c
 */
 heading("Function cutString")
 
-
-
+function cutString(str){
+return console.log(str.substring(1, str.length - 1))
+}
+cutString('James')
+cutString('Tucker')
+cutString('Jarvis')
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 heading("Function giveMeRandom")
 
+function giveMeRandom(n) {
 
+    let arrWithNumbers = [];
 
+    for (let i = 0; i < n; i++) {
+        arrWithNumbers.push(Math.floor(Math.random() * 10));
+    }
 
+    return arrWithNumbers;
+}
+
+console.log(giveMeRandom(9))
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
 */

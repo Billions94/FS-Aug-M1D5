@@ -52,7 +52,6 @@ function crazyDiff(givenNumber){
 }
 (crazyDiff(100))
 
-
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
@@ -64,9 +63,6 @@ function boundary(n) {
     console.log(ifTrue)
 }
 (boundary(10))
-
-
-/* WRITE YOUR CODE HERE */
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
@@ -86,8 +82,6 @@ function strivify(string){
 strivify("Strive")
 strivify("School")
 
-
-
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
 HINT: Module Operator
@@ -106,30 +100,40 @@ function check3and7(positiveNumber) {
 }
 check3and7(7)
 
-
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
 */
+heading("Function reverseString")
 
-/* WRITE YOUR CODE HERE */
+function reverseString(resString){
+     const strReversed = resString.split(/(?:)/u).reverse().join("")
+     console.log(strReversed)
+}
+reverseString("Strive");
+
+
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
+heading("Function upperFirst")
 
-/* WRITE YOUR CODE HERE */
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
+heading("Function cutString")
 
-/* WRITE YOUR CODE HERE */
+
+
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
+heading("Function giveMeRandom")
 
-/* WRITE YOUR CODE HERE */
+
+
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.

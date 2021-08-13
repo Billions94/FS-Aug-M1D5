@@ -56,6 +56,15 @@ function crazyDiff(givenNumber){
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
+heading("Function boundary")
+
+function boundary(n) {
+    intN = parseInt(n);
+    let ifTrue = intN >= 200 && intN <= 100 ? true : false;
+    console.log(ifTrue)
+}
+(boundary(10))
+
 
 /* WRITE YOUR CODE HERE */
 

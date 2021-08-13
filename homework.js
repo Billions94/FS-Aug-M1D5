@@ -59,10 +59,10 @@ heading("Function boundary")
 
 function boundary(n) {
     intN = parseInt(n);
-    let ifTrue = intN >= 20 && intN <= 100 || n === 400 ? true : false;
+    let ifTrue = intN >= 20 && intN <= 100 || n === 400? true : false;
     console.log(ifTrue)
 }
-(boundary(10))
+(boundary(20))
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
@@ -118,7 +118,18 @@ Write a function "upperFirst" to capitalize the first letter of each word of a g
 */
 heading("Function upperFirst")
 
-
+function upperFirst(stringUpperCase) {
+    let capitalizedstring = stringUpperCase.toLowerCase().split(" ");
+  
+    for (let i = 0; i < capitalizedstring.length; i++) {
+      capitalizedstring[i] =
+        capitalizedstring[i].charAt(0).toUpperCase() +
+        capitalizedstring[i].substring(1);
+    }
+    // Directly return the joined string
+    return capitalizedstring.join(" ");
+  }
+  console.log(upperFirst("My name is Alexander Egbedi"))
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */

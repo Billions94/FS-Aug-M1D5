@@ -60,7 +60,7 @@ heading("Function boundary")
 
 function boundary(n) {
     intN = parseInt(n);
-    let ifTrue = intN >= 200 && intN <= 100 ? true : false;
+    let ifTrue = intN >= 20 && intN <= 100 ? true : false;
     console.log(ifTrue)
 }
 (boundary(10))

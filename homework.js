@@ -59,7 +59,7 @@ heading("Function boundary")
 
 function boundary(n) {
     intN = parseInt(n);
-    let ifTrue = intN >= 20 && intN <= 100 ? true : false;
+    let ifTrue = intN >= 20 && intN <= 100 || n === 400 ? true : false;
     console.log(ifTrue)
 }
 (boundary(10))
@@ -68,7 +68,7 @@ function boundary(n) {
 Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
-heading("Function boundary")
+heading("Function strivify")
 
 function strivify(string){
     if (string === "Strive"){
